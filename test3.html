@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Panneau de configuration</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 90vw;
+        }
+
+
+        .group-container {
+            margin-bottom: 20px;
+
+        }
+
+        .widget-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+
+        .widget {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 calc(25% - 20px);
+            transition: transform 0.3s ease;
+            min-width: 200px;
+            box-sizing: border-box;
+        }
+
+        .widget i {
+            font-size: 50px;
+            color: #db475f;
+            margin-bottom: 15px;
+        }
+
+        .widget h3 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .widget p {
+            font-size: 14px;
+            color: #777;
+        }
+
+        .widget:hover {
+            transform: translateY(-5px);
+            background-color: #ebe9e9;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="group-container">
+            <!-- Groupe 1 -->
+            <div class="widget-container">
+                <div class="widget">
+                    <i class='bx bx-briefcase-alt-2'></i>
+                    <h3>Les dernières offres d'emploi</h3>
+                    <p>Consultez les offres d'emploi les plus récentes mises à jour sur la plateforme.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-check-square'></i>
+                    <h3>Mes candidatures</h3>
+                    <p>Suivez l'état de vos candidatures envoyées et les réponses reçues.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-id-card'></i>
+                    <h3>Mon CV</h3>
+                    <p>Visualisez, modifiez et mettez à jour votre CV enregistré sur la plateforme.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-search-alt-2'></i>
+                    <h3>Recherche d'offre d'emploi</h3>
+                    <p>Utilisez divers critères pour rechercher des offres d'emploi correspondant à vos compétences.</p>
+                </div>
+            </div>
+        </div>
+        <hr noshade size="2" color="#000">
+        <div class="group-container">
+            <!-- Groupe 2 -->
+            <div class="widget-container">
+                <div class="widget">
+                    <i class='bx bx-category'></i>
+                    <h3>Offres d'emplois par catégories</h3>
+                    <p>Explorez les offres d'emploi classées par différentes catégories d'industrie ou de métier.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-layer'></i>
+                    <h3>Offres d'emploi par type</h3>
+                    <p>Parcourez les offres d'emploi en fonction du type, comme à temps plein, temps partiel, ou
+                        freelance.
+                    </p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-upload'></i>
+                    <h3>Ajouter CV</h3>
+                    <p>Téléchargez ou créez un nouveau CV pour postuler aux offres d'emploi.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-plus'></i>
+                    <h3>Ajouter Lettre</h3>
+                    <p>Ajoutez une lettre de motivation personnalisée pour accompagner votre candidature.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-envelope'></i>
+                    <h3>Mes Lettres de motivation</h3>
+                    <p>Accédez à vos lettres de motivation sauvegardées pour les réutiliser ou les modifier.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-user-plus'></i>
+                    <h3>Inscription</h3>
+                    <p>Créez un compte pour accéder à toutes les fonctionnalités du portail.</p>
+                </div>
+
+                <div class="widget">
+                    <i class='bx bx-lock'></i>
+                    <h3>Identifiant</h3>
+                    <p>Connectez-vous avec votre identifiant et mot de passe pour accéder à votre compte.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

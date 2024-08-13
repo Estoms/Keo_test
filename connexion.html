@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion - Kéoni Consulting</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(to right, #f0f2f5, #ff7f7f);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            width: 80%;
+            max-width: 1000px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+        }
+
+        /* Section gauche */
+        .form-section {
+            flex: 1;
+            padding: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .form-section h2 {
+            color: #333;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            text-align: left;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="password"] {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ddd;
+            border-radius: 6px;
+            font-size: 1rem;
+            transition: border-color 0.3s;
+            box-sizing: border-box;
+        }
+
+        .form-group input[type="text"]:focus,
+        .form-group input[type="password"]:focus {
+            border-color: #ff7f7f;
+            outline: none;
+        }
+
+        .form-group input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .form-group .checkbox-label {
+            display: inline;
+            color: #555;
+        }
+
+        button {
+            background-color: #001f3f;
+            color: #fff;
+            border: none;
+            padding: 0.75rem;
+            border-radius: 6px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #db475f;
+        }
+
+        .create-account {
+            display: block;
+            margin-top: 1.5rem;
+            color: #ff7f7f;
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+        }
+
+        .create-account:hover {
+            color: #333;
+        }
+
+        .right-section {
+            flex: 1;
+            background-color: #f7f9fc;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .right-section img {
+            max-width: 250px;
+            margin-bottom: 1.5rem;
+        }
+
+        .right-section h3 {
+            font-size: 1,3rem;
+            margin-bottom: 1rem;
+            color: #001f3f;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="form-section">
+            <h2>Connexion</h2>
+            <form action="#" method="POST">
+                <div class="form-group">
+                    <label for="username">Nom d'utilisateur</label>
+                    <input type="text" id="username" name="username" required placeholder="Votre nom d'utilisateur">
+                </div>
+                <div class="form-group">
+                    <label for="password">Mot de passe</label>
+                    <input type="password" id="password" name="password" required placeholder="Votre mot de passe">
+                </div>
+                <div class="form-group">
+                    <input type="checkbox" id="keep-login" name="keep-login">
+                    <label for="keep-login" class="checkbox-label">Rester connecté</label>
+                </div>
+                <button type="submit">Connexion</button>
+            </form>
+            <a href="inscription.html" class="create-account">Créer un compte</a>
+            <a href="#" class="create-account">Mot de passe oublié ?</a>
+        </div>
+        <div class="right-section">
+            <a href="index.html"></a><img src="https://keoni-consulting.net/wp-content/uploads/2024/02/cropped-logo-web-1.jpg" alt="Logo Kéoni Consulting"></a>
+            <h3>Votre partenaire dans la transformation digitale.</h3>
+        </div>
+    </div>
+</body>
+
+</html>
